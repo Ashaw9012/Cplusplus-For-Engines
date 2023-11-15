@@ -48,6 +48,7 @@ void UHealthComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActo
 	if(m_CurrentShield == m_MaxShield || !m_CanRegenShield) {return;}
 	if(m_ShieldRecoverDelayTimer > 0.f)
 	{
+		//starts recovering shields
 		m_ShieldRecoverDelayTimer -= DeltaTime;
 	}
 	else
