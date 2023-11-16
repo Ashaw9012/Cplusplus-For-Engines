@@ -10,7 +10,7 @@
 class UCameraComponent;
 class UInputMappingContext;
 class UInputAction;
-//class AWeapon_Base; 
+class AWeapon_Base; 
 
 UCLASS(Abstract)
 class CPLUSPLUSFORENGINES_API AGEPchar : public ACharacter
@@ -42,8 +42,8 @@ public:
 	AGEPchar();
 
 protected:
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	//TSubclassOf<AWeapon_Base> _DefaultWeapon;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSubclassOf<AWeapon_Base> _DefaultWeapon;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TObjectPtr<AActor> _FireableRef; 
