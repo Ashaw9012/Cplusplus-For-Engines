@@ -1,7 +1,7 @@
 #include "Weapon_Base.h"
 #include "Components/ArrowComponent.h"
 
-DEFINE_LOG_CATEGORY_STATIC(LogWeapon, Display, All); 
+DEFINE_LOG_CATEGORY_STATIC(LogWeaponBase, Display, All); 
 
 AWeapon_Base::AWeapon_Base()
 {
@@ -17,7 +17,7 @@ AWeapon_Base::AWeapon_Base()
 
 bool AWeapon_Base::Fire_Implementation()
 {
-	UE_LOG(LogWeapon, Display, TEXT("FIREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"));
+	UE_LOG(LogWeaponBase, Display, TEXT("FIREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"));
 	return true; 
 }
 
