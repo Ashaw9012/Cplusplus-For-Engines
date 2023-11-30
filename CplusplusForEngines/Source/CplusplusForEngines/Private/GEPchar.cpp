@@ -23,10 +23,8 @@ AGEPchar::AGEPchar()
 	_WeaponAttachPoint->SetupAttachment(_Camera);
 }
 
-void AGEPchar::BeginPlay()
+void AGEPchar::Init_Implementation()
 {
-	Super::BeginPlay();
-
 	if(_DefaultWeapon)
 	{
 		FActorSpawnParameters spawnParams;

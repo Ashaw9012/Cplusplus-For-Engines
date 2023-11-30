@@ -41,14 +41,15 @@ class CPLUSPLUSFORENGINES_API AGEPchar : public ACharacter
 public:
 	AGEPchar();
 
+	UFUNCTION(BlueprintNativeEvent)
+	void Init(); 
+	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TSubclassOf<AWeapon_Base> _DefaultWeapon;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TObjectPtr<AActor> _FireableRef; 
-	
-	virtual void BeginPlay() override;
 
 	void Move(const FInputActionValue& Value);
 
