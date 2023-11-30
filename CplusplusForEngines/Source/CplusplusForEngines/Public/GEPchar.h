@@ -50,8 +50,6 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TObjectPtr<AActor> _FireableRef; 
-	
-	virtual void BeginPlay() override;
 
 	void Move(const FInputActionValue& Value);
 
