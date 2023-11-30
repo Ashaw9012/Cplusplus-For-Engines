@@ -41,6 +41,9 @@ class CPLUSPLUSFORENGINES_API AGEPchar : public ACharacter
 public:
 	AGEPchar();
 
+	UFUNCTION(BlueprintNativeEvent)
+	void Init(); 
+	
 protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TSubclassOf<AWeapon_Base> _DefaultWeapon;
