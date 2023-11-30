@@ -9,7 +9,7 @@ UCLASS(Abstract)
 class CPLUSPLUSFORENGINES_API AWeapon_Hitscan : public AWeapon_Base
 {
 	GENERATED_BODY()
-
+	
 public:
 	virtual bool Fire_Implementation() override;
 };
