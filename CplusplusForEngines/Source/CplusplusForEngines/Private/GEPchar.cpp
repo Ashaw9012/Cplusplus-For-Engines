@@ -1,6 +1,5 @@
 #include "GEPchar.h"
 
-#include "AITypes.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "Fireable.h"
